@@ -11,7 +11,6 @@
     />
     <meta name="author" name="Sai Kumar" />
     <meta name="keywords" content="News, IMM, Sports, Tech, Real Estate" />
-    
 
     <link
       rel="apple-touch-icon"
@@ -37,11 +36,7 @@
     <header>
       <nav>
         <div>
-          <a
-            ><img
-              src="./Logo/IMM News Logo.png"
-              alt="IMM News Logo"
-          /></a>
+          <a><img src="./Logo/IMM News Logo.png" alt="IMM News Logo" /></a>
         </div>
         <ul>
           <li><a href="home.html">Home</a></li>
@@ -52,12 +47,35 @@
     </header>
     <main>
       <section>
-        <p>
-          Welcome text
-        </p>
-        <p>
-          Mission statement
-        </p>
+        <form action="process-contact.php" method="POST">
+          <label for="name">Name</label>
+          <input name="name" type="text" required />
+          <label for="email">Email</label>
+          <input name="email" type="email" required />
+
+          <fieldset>
+            <legend>Category interests</legend>
+            <label for="industry">Industry</label
+            ><input for="industry" type="checkbox" />
+
+            <label for="technical">Technical</label
+            ><input for="technical" type="checkbox" />
+
+            <label for="career">Career</label
+            ><input for="career" type="checkbox" />
+          </fieldset>
+
+         
+            <label for="role">Your role</label>
+            <select name="role">
+              <option value="writer">Writer</option>
+              <option value="contributor">Contributor</option>
+              <option value="administration">Administration</option>
+            </select>
+          
+
+          <input type="submit" />
+        </form>
       </section>
     </main>
     <footer id="cookies"><a href="#">Accept cookies</a></footer>
